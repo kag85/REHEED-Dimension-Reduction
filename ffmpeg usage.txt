@@ -1,0 +1,7 @@
+If using windows, this guide will help use ffmpeg to convert a .avi file to frames at a specified fps.  
+First install ffmpeg.  There are a variety of guides to do so.
+You may then go into the command prompt, go to the folder where you would like to place the frames.  
+Make sure that the video of interest is the only thing in this folder, then enter:
+
+ffmpeg -i MovieName.avi -vf  fps = 4  c01_%04d.jpg -hide_banner
+
